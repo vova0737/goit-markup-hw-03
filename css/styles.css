@@ -6,6 +6,8 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -13,14 +15,34 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* main container geometry */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* logo styles */
+
 .logo {
-  font-family: Raleway;
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -37,7 +59,19 @@ body {
   color: #ffffff;
 }
 
-.nav-link {
+/* navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -45,13 +79,22 @@ body {
   color: var(--title-text-color);
 }
 
-.nav-link:hover,
-.nav-link:focus,
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-item:hover,
+.nav-item:focus,
 .current {
   color: var(--active-link-color);
 }
 
-.nav-contacts {
+.contacts-list {  
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -59,10 +102,16 @@ body {
   color: var(--primary-text-color);
 }
 
-.nav-contacts:hover,
-.nav-contacts:focus {
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--active-link-color);
 }
+
+/* banner section */
 
 .banner-section {
   background: #2f303a;
@@ -93,6 +142,8 @@ body {
 }
 
 .feature-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
