@@ -28,6 +28,7 @@ body {
 } */
 
 /* main container geometry */
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -69,6 +70,10 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.header {
+  border-bottom: 1px solid #eeeeee;  
 }
 
 /* navigation */
@@ -138,7 +143,6 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -177,8 +181,8 @@ body {
   margin-bottom: 0;
 }
 
-.feature-item{
-  margin-right: 30px; 
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-heading {
@@ -231,30 +235,30 @@ body {
 
 .team-section {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   background: #f5f4fa;
 }
 
 .team-worker {
   display: flex;
   padding-left: 0;
+  padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .team-name {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .team-list {
   text-align: center;
-  padding-bottom: 30px;
   background-color: #ffffff;
 }
 
@@ -263,6 +267,7 @@ body {
 }
 
 .team-function {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -310,11 +315,9 @@ body {
 .portfolio-switcher {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  margin-top: 94px;
   padding-left: 0;
-  margin-top: 0;
   margin-bottom: 50px;
-  border-top: 1px solid #eeeeee;
 }
 
 .portfolio-button {
@@ -344,12 +347,12 @@ body {
 }
 
 .portfolio-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    padding-bottom: 94px;
-    margin: 0px; 
-  }
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  padding-bottom: 94px;
+  margin: 0px; 
+}
 
 .site-name {
   font-weight: bold;
@@ -358,10 +361,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   margin-top: 0;
-  margin-bottom: 4px;
 }
 
 .site-type {
+  margin: 0;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
@@ -382,7 +385,5 @@ body {
 }
 
 .site-description {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
